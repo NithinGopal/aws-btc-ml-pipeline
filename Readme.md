@@ -1,10 +1,9 @@
 # BTC Scalping Data Pipeline 🚀
 
-[
-[
-[
+**Production-grade Binance BTCUSDT perpetual futures data platform** built with AWS lakehouse architecture. 
 
-Production-grade **Binance BTCUSDT perpetual futures** data pipeline built with AWS lakehouse architecture. Processes 1M+ ticks/day with 99.9% completeness for scalping ML models and automated trading signals.
+**Powers scalping ML models → automated trading signals** (1M+ ticks/day, 99.9% completeness).
+
 
 ## 🎯 Project Goals
 **Primary**: End-to-end data engineering showcase for resume (AWS DE cert alignment)
