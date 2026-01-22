@@ -29,10 +29,18 @@ def test_aws_conn():
         buckets = s3.list_buckets()
         print(f"Connected! You have {len(buckets["Buckets"])} S3 Buckets")
         
+        # Check if our bucket exists
         if s3.head_bucket(Bucket=bucket_name):
             print(f"{bucket_name} exists!")
         else:
             print(f"{bucket_name} DOES NOT EXIST")
+        
+        # List bronze to check existing data
+        resp = s3.list_objects_v2(Bucket=bucket_name, Prefix='bronze/')
+        if resp.get('Contents'):
+            print("Existing bronze data found.")
+        else:
+            print("No bronze data yet - Ready for backfill.")
         
         return True
         

@@ -1,0 +1,8 @@
+aws:
+  region: "ap-south-1"
+  bucket: "btc-ml-data-bkt"
+data:
+  symbol: "BTCUSDT"
+  timeframes: ["1h", "15m", "5m", "1m"]  # Priority order
+binance:
+  base_url: "https://data.binance.vision/data/futures/um/monthly/klines"
